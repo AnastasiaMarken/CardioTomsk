@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+	<item
+		android:id="@+id/navigation_pills"
+		android:icon="@drawable/pills"
+		android:title="@string/menu_pills"
+		app:showAsAction="ifRoom"/>
+
+	<item
+		android:id="@+id/navigation_doctor"
+		android:icon="@drawable/schedule"
+		android:title="@string/menu_doctor"
+		app:showAsAction="ifRoom"/>
+
+	<item
+		android:id="@+id/navigation_home"
+		android:icon="@drawable/home"
+		android:title="@string/menu_home"
+		app:showAsAction="ifRoom" />
+
+	<item
+		android:id="@+id/navigation_heartbeat"
+		android:icon="@drawable/heartbeat"
+		android:title="@string/menu_heartbeat"
+		app:showAsAction="ifRoom"/>
+
+	<item
+		android:id="@+id/navigation_chat"
+		android:icon="@drawable/chat"
+		android:title="@string/menu_chat"
+		app:showAsAction="ifRoom"/>
+</menu>

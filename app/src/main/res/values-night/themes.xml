@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+	<!-- Base application theme. -->
+	<style name="Theme.CardioTomsk" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+		<!-- Primary brand color. -->
+		<item name="colorPrimary">@color/nightPrimary</item>
+		<item name="colorPrimaryVariant">@color/nightPrimaryLite</item>
+		<item name="colorOnPrimary">@color/nightOnPrimary</item>
+		<!-- Secondary brand color. -->
+		<item name="colorSecondary">@color/nightRed</item>
+<!--		<item name="colorSecondaryVariant">@color/teal_200</item>-->
+		<item name="colorOnSecondary">@color/nightOnPrimary</item>
+		<!-- Status bar color. -->
+		<item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+		<!-- Customize your theme here. -->
+	</style>
+</resources>

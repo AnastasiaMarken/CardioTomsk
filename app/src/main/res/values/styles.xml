@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="TextViewPrimary">
+		<item name="android:textSize">20sp</item>
+		<item name="android:textColor">@color/primary</item>
+	</style>
+	<style name="TextViewPrimaryLite"></style>
+
+	<style name="TextViewSecondary">
+		<item name="android:textSize">16sp</item>
+		<item name="android:textColor">@color/onPrimary</item>
+	</style>
+
+
+	<style name="Btn">
+		<item name="android:textSize">18sp</item>
+	</style>
+	<style name="Btn.Primary">
+		<item name="android:textAlignment">viewStart</item>
+		<item name="android:textColor">@color/primary</item>
+	</style>
+	<style name="Btn.Secondary">
+		<item name="android:textColor">@color/onPrimary</item>
+	</style>
+
+
+	<style name="UnderlinedText">
+		<item name="android:textSize">16sp</item>
+		<item name="android:textColor">@color/primary</item>
+		<item name="android:textAlignment">center</item>
+	</style>
+
+
+
+	<style name="TextHeader">
+		<item name="android:textSize">40sp</item>
+		<item name="android:textAlignment">center</item>
+		<item name="fontFamily">@font/roboto_medium</item>
+	</style>
+	<style name="TextHeader1">
+		<item name="android:textSize">30sp</item>
+		<item name="android:textAlignment">textStart</item>
+		<item name="fontFamily">@font/roboto_medium</item>
+	</style>
+	<style name="TextHeader2">
+		<item name="android:textSize">20sp</item>
+		<item name="android:textAlignment">center</item>
+		<item name="fontFamily">@font/roboto_medium</item>
+	</style>
+	<style name="TextHeader3">
+		<item name="android:textSize">18sp</item>
+		<item name="android:textAlignment">center</item>
+		<item name="fontFamily">@font/roboto_medium</item>
+	</style>
+	<style name="TextHeader4">
+		<item name="android:textSize">18sp</item>
+		<item name="android:textAlignment">center</item>
+		<item name="fontFamily">@font/roboto_medium</item>
+	</style>
+	<style name="TextHeader.Primary">
+		<item name="android:textColor">@color/primary</item>
+	</style>
+	<style name="TextHeader.OnPrimary">
+		<item name="android:textColor">@color/onPrimary</item>
+	</style>
+	<style name="TextHeader1.Primary">
+		<item name="android:textColor">@color/primary</item>
+	</style>
+	<style name="TextHeader1.OnPrimary">
+		<item name="android:textColor">@color/onPrimary</item>
+	</style>
+	<style name="TextHeader2.Primary">
+		<item name="android:textColor">@color/primary</item>
+	</style>
+	<style name="TextHeader2.OnPrimary">
+		<item name="android:textColor">@color/onPrimary</item>
+	</style>
+	<style name="TextHeader3.Primary">
+		<item name="android:textColor">@color/primary</item>
+	</style>
+	<style name="TextHeader3.OnPrimary">
+		<item name="android:textColor">@color/onPrimary</item>
+	</style>
+	<style name="TextHeader4.Primary">
+		<item name="android:textColor">@color/primary</item>
+	</style>
+	<style name="TextHeader4.OnPrimary">
+		<item name="android:textColor">@color/onPrimary</item>
+	</style>
+
+	<style name="TextMain">
+		<item name="android:textSize">16sp</item>
+		<item name="android:textAlignment">textStart</item>
+		<item name="fontFamily">@font/roboto</item>
+		<item name="android:justificationMode">inter_word</item>
+	</style>
+	<style name="TextMain2">
+		<item name="android:textSize">20sp</item>
+		<item name="android:textAlignment">textStart</item>
+		<item name="fontFamily">@font/roboto</item>
+		<item name="android:justificationMode">inter_word</item>
+	</style>
+	<style name="TextMain.OnPrimary">
+		<item name="android:textColor">@color/onPrimary</item>
+	</style>
+	<style name="TextMain.Primary">
+		<item name="android:textColor">@color/primary</item>
+	</style>
+	<style name="TextMain2.OnPrimary">
+		<item name="android:textColor">@color/onPrimary</item>
+	</style>
+	<style name="TextMain2.Primary">
+		<item name="android:textColor">@color/primary</item>
+	</style>
+
+
+	<style name="TextEdite">
+		<item name="android:textSize">16sp</item>
+		<item name="android:textAlignment">textStart</item>
+		<item name="android:textColor">@color/primary</item>
+		<item name="android:textColorHint">@color/primaryLite</item>
+	</style>
+
+
+	<style name="DatePickerDOB">
+		<item name="colorControlNormal">@color/primaryLite</item>  <!-- DatePicker color separate strip -->
+		<item name="android:editTextStyle">@style/DatePickerDOBText</item>
+		<item name="android:itemPadding">30dp</item>
+	</style>
+	<style name="DatePickerDOBText" parent="android:style/Widget.EditText">
+		<item name="android:textColor">@color/primary</item> <!-- DatePicker color text -->
+		<item name="android:textSize">16dp</item>  <!-- DatePicker font size text -->
+		<item name="android:paddingHorizontal">30dp</item>
+	</style>
+
+
+	<style name="CalenderViewCustom" parent="Theme.AppCompat">
+		<item name="colorAccent">@color/primaryLiteGrad</item>
+		<item name="colorPrimary">@color/onPrimary</item>
+
+	</style>
+
+	<style name="CalenderViewDateCustomText" parent="android:TextAppearance.DeviceDefault.Small">
+		<item name="android:textColor">@color/onPrimary</item>
+		<item name="android:weekNumberColor">@color/primaryLiteGrad</item>
+		<item name="android:textSize">20sp</item>
+	</style>
+
+	<style name="CalenderViewWeekCustomText" parent="android:TextAppearance.DeviceDefault.Small">
+		<item name="android:textColor">@color/onPrimary</item>
+		<item name="android:textSize">20sp</item>
+	</style>
+
+
+	<style name="CardsStyle">
+		<item name="cardElevation">3dp</item>
+		<item name="cardCornerRadius">30dp</item>
+<!--		<item name="contentPadding">20dp</item>-->
+		<item name="android:outlineSpotShadowColor">@color/primary</item>
+		<item name="android:layout_margin">10dp</item>
+	</style>
+</resources>

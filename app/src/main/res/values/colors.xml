@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="primary">#3466AB</color>
+	<color name="primaryLite">#7899C8</color>
+	<color name="onPrimary">#FFFFFFFF</color>
+	<color name="onPrimaryLite">#F6FAFF</color>
+
+	<color name="icon">#FFFFFFFF</color>
+	<color name="nightIcon">#50545C</color>
+
+	<color name="nightPrimary">#486285</color>
+	<color name="nightPrimaryLite">#697990</color>
+	<color name="nightOnPrimary">#FFFFFFFF</color>
+	<color name="nightOnPrimaryLite">#50545C</color>
+
+	<color name="transparent">@android:color/transparent</color>
+	<color name="red">#E41D37</color>
+	<color name="nightRed">#801422</color>
+	<color name="white">#FFFFFFFF</color>
+
+	<color name="black">#FF000000</color>
+
+	<color name="mtrl_textinput_default_box_stroke_color">#7899C8</color>
+
+	<color name="onPrimaryGrad">#B3F6FAFF</color>
+	<color name="primaryGrad">#CC3466AB</color>
+	<color name="primaryLiteGrad">#CC7899C8</color>
+</resources>

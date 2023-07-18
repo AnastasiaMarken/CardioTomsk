@@ -1,0 +1,58 @@
+<resources>
+	<string name="app_name">Cardio Tomsk</string>
+
+	<string name="app_name_full">Томский Кардиологический Центр</string>
+	<string name="registration">Регистрация</string>
+	<string name="autorisation">Вход</string>
+
+	<string name="name">Имя</string>
+	<string name="second_name">Фамилия</string>
+	<string name="patronymic">Отчество</string>
+	<string name="dob">Дата рождения</string>
+	<string name="gender">Пол</string>
+	<string name="gender_f">Жен</string>
+	<string name="gender_m">Муж</string>
+	<string name="gender_o">Не указывать</string>
+	<string name="login">Логин</string>
+	<string name="email">Email</string>
+	<string name="password">Пароль</string>
+	<string name="repeat_password">Повторите пароль</string>
+	<string name="remember_me">Запомнить меня</string>
+	<string name="forget_password">Забыли пароль?</string>
+	<string name="create_acc"><u>Создать аккаунт</u></string>
+	<string name="next_step">Дальше</string>
+	<string name="reg_complete">Завершить</string>
+	<string name="already_have_acc"><u>Уже есть аккаунт</u></string>
+
+	<string name="menu_pills">Лекарства</string>
+	<string name="menu_doctor">Прием</string>
+	<string name="menu_home"> </string>
+	<string name="menu_heartbeat">Активность</string>
+	<string name="menu_chat">Чат</string>
+
+	<string name="transition_login">transition_login</string>
+	<!-- TODO: Remove or change this placeholder text -->
+	<string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+	<string name="test_patient">Анкета пациента</string>
+	<string name="test_patient_description">Предлагаем пройти тест на предмет самодиагностики сердечно-сосудистых заболеваний</string>
+
+	<string name="application_patient">Заявка на прием</string>
+	<string name="application_patient_description1">Уважаемый пациент!</string>
+	<string name="application_patient_description2">Отправьте нам заявку и наш специалист перезвонит вам в ближайший будний день</string>
+
+
+	<string name="pills_title">Прием лекарств</string>
+	<string name="pills_notice">Нет препаратов назначенных для приема</string>
+
+	<string name="schedule_title">Посещение доктора</string>
+	<string name="schedule_notice">Нет назначенных приемов</string>
+
+	<string name="profile">Профиль</string>
+	<string name="profile_custom">Настройки профиля</string>
+	<string name="profile_confidentiality">Конфиденциальность</string>
+	<string name="profile_notifications">Уведомления</string>
+	<string name="profile_exit">Выход</string>
+
+</resources>

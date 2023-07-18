@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/onPrimaryLite"
+	tools:context=".mainFragments.PillsFragment">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:paddingHorizontal="20dp"
+			android:paddingTop="20dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/pills_title"
+				style="@style/TextHeader1.Primary"
+				android:transitionName="transition_title_text"/>
+
+			<androidx.constraintlayout.widget.ConstraintLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="20dp">
+
+				<ImageView
+					android:id="@+id/calendar_left_btn"
+					android:layout_width="25dp"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="70dp"
+					android:adjustViewBounds="true"
+					android:scaleType="centerCrop"
+					android:src="@drawable/left_back"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toTopOf="parent"
+					app:tint="@color/primary" />
+
+				<ImageView
+					android:id="@+id/calendar_right_btn"
+					android:layout_width="25dp"
+					android:layout_height="wrap_content"
+					android:layout_marginEnd="70dp"
+					android:adjustViewBounds="true"
+					android:scaleType="centerCrop"
+					android:src="@drawable/right_back"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintTop_toTopOf="parent"
+					app:tint="@color/primary" />
+
+				<TextView
+					android:id="@+id/calendar_month"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:text="Январь 2022"
+					android:textSize="20sp"
+					android:textAlignment="center"
+					android:layout_marginBottom="2dp"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintEnd_toStartOf="@+id/calendar_right_btn"
+					app:layout_constraintStart_toEndOf="@+id/calendar_left_btn"
+					app:layout_constraintTop_toTopOf="parent"
+					tools:ignore="RtlCompat" />
+
+			</androidx.constraintlayout.widget.ConstraintLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_marginTop="10dp">
+
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="Пн"
+					android:textAppearance="@style/TextMain.Primary"
+					android:textSize="18sp"
+					android:textAlignment="center"
+					android:textColor="@color/primaryLite"/>
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="Вт"
+					android:textAppearance="@style/TextMain.Primary"
+					android:textSize="18sp"
+					android:textAlignment="center"
+					android:textColor="@color/primaryLite"/>
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="Ср"
+					android:textAppearance="@style/TextMain.Primary"
+					android:textSize="18sp"
+					android:textAlignment="center"
+					android:textColor="@color/primaryLite"/>
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="Чт"
+					android:textAppearance="@style/TextMain.Primary"
+					android:textSize="18sp"
+					android:textAlignment="center"
+					android:textColor="@color/primaryLite"/>
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="Пт"
+					android:textAppearance="@style/TextMain.Primary"
+					android:textSize="18sp"
+					android:textAlignment="center"
+					android:textColor="@color/primaryLite"/>
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="Сб"
+					android:textAppearance="@style/TextMain.Primary"
+					android:textSize="18sp"
+					android:textAlignment="center"
+					android:textColor="@color/primaryLite"/>
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="Вс"
+					android:textAppearance="@style/TextMain.Primary"
+					android:textSize="18sp"
+					android:textAlignment="center"
+					android:textColor="@color/primaryLite"/>
+			</LinearLayout>
+
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/calendar_RV"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				/>
+
+
+			<LinearLayout
+				android:visibility="gone"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_marginTop="20dp">
+
+				<androidx.constraintlayout.widget.ConstraintLayout
+					android:layout_width="wrap_content"
+					android:layout_height="100dp"
+					android:layout_marginHorizontal="3dp"
+					android:layout_weight="1"
+					android:background="@drawable/shape_btn_week">
+
+					<TextView
+						style="@style/TextMain.Primary"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="15dp"
+						android:text="Пн"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+					<TextView
+						style="@style/TextMain.Primary"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="15dp"
+						android:gravity="center"
+						android:textAlignment="center"
+						android:text="17"
+						app:layout_constraintBottom_toBottomOf="parent"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent" />
+
+
+				</androidx.constraintlayout.widget.ConstraintLayout>
+				<androidx.constraintlayout.widget.ConstraintLayout
+					android:layout_width="wrap_content"
+					android:layout_height="100dp"
+					android:layout_marginHorizontal="3dp"
+					android:layout_weight="1"
+					android:background="@drawable/shape_btn_week_selected">
+
+					<TextView
+						style="@style/TextMain.OnPrimary"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="15dp"
+						android:text="Вт"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+					<TextView
+						style="@style/TextMain.Primary"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="15dp"
+						android:gravity="center"
+						android:textAlignment="center"
+						android:background="@drawable/shape_date_selected"
+						android:text="18"
+						app:layout_constraintBottom_toBottomOf="parent"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent" />
+
+
+				</androidx.constraintlayout.widget.ConstraintLayout>
+				<androidx.constraintlayout.widget.ConstraintLayout
+					android:layout_width="wrap_content"
+					android:layout_height="100dp"
+					android:layout_marginHorizontal="3dp"
+					android:layout_weight="1"
+					android:background="@drawable/shape_btn_week">
+
+					<TextView
+						style="@style/TextMain.Primary"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="15dp"
+						android:text="Ср"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+					<TextView
+						style="@style/TextMain.Primary"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="15dp"
+						android:gravity="center"
+						android:textAlignment="center"
+						android:text="19"
+						app:layout_constraintBottom_toBottomOf="parent"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent" />
+
+
+				</androidx.constraintlayout.widget.ConstraintLayout>
+				<androidx.constraintlayout.widget.ConstraintLayout
+					android:layout_width="wrap_content"
+					android:layout_height="100dp"
+					android:layout_marginHorizontal="3dp"
+					android:layout_weight="1"
+					android:background="@drawable/shape_btn_week">
+
+					<TextView
+						style="@style/TextMain.Primary"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="15dp"
+						android:text="Чт"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+					<TextView
+						style="@style/TextMain.Primary"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="15dp"
+						android:gravity="center"
+						android:textAlignment="center"
+						android:text="20"
+						app:layout_constraintBottom_toBottomOf="parent"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent" />
+
+
+				</androidx.constraintlayout.widget.ConstraintLayout>
+				<androidx.constraintlayout.widget.ConstraintLayout
+					android:layout_width="wrap_content"
+					android:layout_height="100dp"
+					android:layout_marginHorizontal="3dp"
+					android:layout_weight="1"
+					android:background="@drawable/shape_btn_week">
+
+					<TextView
+						style="@style/TextMain.Primary"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="15dp"
+						android:text="Пт"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+					<TextView
+						style="@style/TextMain.Primary"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="15dp"
+						android:gravity="center"
+						android:textAlignment="center"
+						android:text="21"
+						app:layout_constraintBottom_toBottomOf="parent"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent" />
+
+
+				</androidx.constraintlayout.widget.ConstraintLayout>
+				<androidx.constraintlayout.widget.ConstraintLayout
+					android:layout_width="wrap_content"
+					android:layout_height="100dp"
+					android:layout_marginHorizontal="3dp"
+					android:layout_weight="1"
+					android:background="@drawable/shape_btn_week">
+
+					<TextView
+						style="@style/TextMain.Primary"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="15dp"
+						android:text="Сб"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+					<TextView
+						style="@style/TextMain.Primary"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="15dp"
+						android:gravity="center"
+						android:textAlignment="center"
+						android:text="22"
+						app:layout_constraintBottom_toBottomOf="parent"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent" />
+
+
+				</androidx.constraintlayout.widget.ConstraintLayout>
+				<androidx.constraintlayout.widget.ConstraintLayout
+					android:layout_width="wrap_content"
+					android:layout_height="100dp"
+					android:layout_marginHorizontal="3dp"
+					android:layout_weight="1"
+					android:background="@drawable/shape_btn_week">
+
+					<TextView
+						style="@style/TextMain.Primary"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="15dp"
+						android:text="Вс"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+					<TextView
+						style="@style/TextMain.Primary"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="15dp"
+						android:gravity="center"
+						android:textAlignment="center"
+						android:text="23"
+						app:layout_constraintBottom_toBottomOf="parent"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent" />
+
+
+				</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+			</LinearLayout>
+		</LinearLayout>
+
+		<androidx.cardview.widget.CardView
+			android:layout_width="match_parent"
+			android:layout_height="600dp"
+			android:orientation="vertical"
+			android:background="@drawable/shape_bottom_block"
+			android:padding="20dp"
+			android:layout_marginTop="20dp"
+			android:backgroundTint="@color/onPrimary"
+			app:cardElevation="8dp"
+			app:cardCornerRadius="30dp"
+			android:outlineAmbientShadowColor="@color/primary"
+			android:shadowColor="@color/primary"
+			android:outlineSpotShadowColor="@color/primary">
+
+			<androidx.constraintlayout.widget.ConstraintLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toTopOf="parent">
+
+					<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="60dp"
+						android:layout_gravity="center"
+						android:src="@drawable/ic_icon"
+						app:tint="@color/primaryLiteGrad" />
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:gravity="center"
+						android:text="@string/pills_notice"
+						android:textColor="@color/primaryLiteGrad"
+						android:textSize="16sp"
+						android:layout_marginTop="20dp"/>
+				</LinearLayout>
+			</androidx.constraintlayout.widget.ConstraintLayout>
+		</androidx.cardview.widget.CardView>
+	</LinearLayout>
+
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+		android:id="@+id/pills_fab"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom|right"
+		android:layout_margin="16dp"
+		app:srcCompat="@drawable/ic_edite"
+		android:backgroundTint="@color/primary"
+		android:elevation="6dp"
+		app:fabSize="mini"
+		app:borderWidth="0dp"
+		android:tint="@color/onPrimary"
+		app:maxImageSize="18dp"
+		android:outlineSpotShadowColor="@color/primary"
+		android:outlineAmbientShadowColor="@color/primary"/>
+</FrameLayout>

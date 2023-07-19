@@ -1,5 +1,5 @@
 # CardioTomsk
-Учебный проект, посвященный разработке Android-приложения для Томского кардиологического центра.
+Учебный проект, посвященный разработке Android-приложения для Томского Кардиологического Центра.
 
 <img width="260" alt="image" src="https://github.com/AnastasiaMarken/CardioTomsk/assets/101307775/abe0758f-7fca-4292-8dd5-7feaf1758371">
 <br><img width="260" alt="image" src="https://github.com/AnastasiaMarken/CardioTomsk/assets/101307775/bfe85f58-bb33-4155-9b1d-7d37389175b0">
